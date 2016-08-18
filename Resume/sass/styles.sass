@@ -1,0 +1,105 @@
+@import './mixin.sass'
+@import './var.sass'
+
+*
+    margin: 0px
+    box-sizing:border-box
+    font-family: 'segoe-ui', arial
+    transition: all 350ms ease-in-out
+
+main
+    @include flex(row)
+
+aside
+    @include flex(column)
+    width: 300px
+    height: 100%
+    background: $theam-color
+    display: flex    
+    position: fixed
+    box-shadow: 2px 0px 4px rgba(0,0,0,0.3)
+
+.img-box
+    width: auto
+    height: 200px
+    background-image: linear-gradient(transparent  , black 200%), url('../images/sonali.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    align-items: flex-end
+    justify-content: flex-start
+    padding: 10px
+    
+h1.name 
+    color: white
+    margin: 0
+    margin-bottom: 8px
+    
+.aside-box
+    height: 180px
+    //border: 1px solid white
+    margin: 5px
+    padding: 10px
+    color: white
+    display: flex
+    align-items: center
+    
+.aside-box>h4
+    font-weight: 300
+    line-height: 1.5
+    text-indent: 20px
+    
+.aside-log
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    margin: 5px
+    background-color: white
+
+.aside-log
+    font-weight: 300
+    word-spacing: 5px
+    letter-spacing: 1px
+    line-height: 1.5
+    
+.addr
+    flex: 1
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.5
+    margin: 5px 
+    
+section
+    flex: auto
+    background: #FAFAFA
+    padding: 30px
+    display: flex
+    flex-direction: column
+    margin-left: 300px
+
+.card
+    height: 200px
+    width: 100%
+    margin: 20px
+    @include material-shadow
+/* @media query*/
+
+@media screen and(max-width:'800px')
+    main
+        @include flex(column)
+    
+    section
+        margin-left:0
+        @include flex(column)
+        @include exact-center
+    
+    aside
+        position: relative
+        width: 100%
+    
+        .img-box
+            height: 50vh
+    .card
+       
+        width: 100%
+        height: 50vh

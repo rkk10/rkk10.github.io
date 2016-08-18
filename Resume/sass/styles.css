@@ -1,0 +1,165 @@
+/* line 4, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'segoe-ui', arial;
+    transition: all 350ms ease-in-out;
+}
+
+
+/* line 10, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* line 13, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    background: #0D47A1;
+    display: flex;
+    position: fixed;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* line 22, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+.img-box {
+    width: auto;
+    height: 200px;
+    background-image: linear-gradient(transparent, black 200%), url("../images/sonali.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+
+/* line 33, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+h1.name {
+    color: white;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+
+/* line 38, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+.aside-box {
+    height: 180px;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+/* line 47, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+.aside-box > h4 {
+    font-weight: 300;
+    line-height: 1.5;
+    text-indent: 20px;
+}
+
+
+/* line 52, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+.aside-log {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: white;
+}
+
+
+/* line 59, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+.aside-log {
+    font-weight: 300;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+
+/* line 65, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+.addr {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+
+/* line 72, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+section {
+    flex: auto;
+    background: #FAFAFA;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+
+/* line 80, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+
+.card {
+    height: 200px;
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* @media query*/
+
+@media screen and (max-width: 800px) {
+    /* line 88, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    /* line 91, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+    section {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* line 96, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+    aside {
+        position: relative;
+        width: 100%;
+    }
+    /* line 100, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+    aside .img-box {
+        height: 50vh;
+    }
+    /* line 102, C:/Users/Ravindra/Documents/GitHub/Resume/sass/styles.sass */
+    .card {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+
+/*# sourceMappingURL=styles.css.map */
