@@ -61,7 +61,7 @@ body {
         transform: translateX(45px);
         background-repeat: no-repeat;
         background-size: 100%;
-        background-image: url(../images/squareJPG.jpg); }
+        background-image: url(../images/square.JPG); }
         /* line 57, H:/ravindra/myresume/sass/styles.sass */
         body aside .profile .pic .sc-show {
           display: none; }
