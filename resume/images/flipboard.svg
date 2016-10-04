@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+    <path fill="rgba(0, 0, 0, 0)" d="m0 0h100v100h-100z" />
+    <g transform="matrix(.29333 0 0 .29333-4.667-4.667)">
+        <path fill="#000000" d="m147.8 302h-77.1v-231.3h77.1v231.3" />
+        <path opacity=".85" fill="#000000" d="m229.9 70.7h-82.1v77.1h77.9 76.3v-77.1h-72.1" />
+        <path opacity=".75" fill="#000000" d="m147.8 147.8h77.1v77.1h-77.1v-77.1" />
+    </g>
+</svg>
