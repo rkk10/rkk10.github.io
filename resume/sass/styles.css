@@ -301,6 +301,9 @@ body {
       /* line 242, H:/ravindra/myresume/sass/styles.sass */
       body aside .monolog {
         padding: 0px 14px; }
+  .monolog > h3{
+          margin-top: 12px;
+  }    
     /* line 248, H:/ravindra/myresume/sass/styles.sass */
     body section header {
       display: none; }
