@@ -1,0 +1,38 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+/*firebase element import*/
+<dom-module id="notice-sent">
+    
+  <style>
+
+   
+  </style>
+
+  <template>
+      <firbase-element
+          id="ref" childEvents location=""             
+           data="notices">
+      </firbase-element>
+      <form vertical layout on-submit="{{sendNotice}}">
+        <input type="date" placeholder="Enter date" value="{{date}}" flex>
+        <input type="text" placeholder="Enter title" value="{{title}}" flex>
+        <input type="text" placeholder="Enter detail" value="{{detail}}" flex>
+        <button type="submit" >Send</button>     
+      </form>
+  </template>
+</dom-module>
+<script>
+
+  Polymer({
+
+    is: 'notice-sent',
+    sendNotice: function(e){
+        e.preventDefault();
+        this.$.ref.push({date: this.date, title: this.title, detail: this.detail});
+        this.detail="";
+        this.title="";
+    }
+
+  });
+</script>
+
+         

@@ -1,0 +1,39 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+/*firebase element import*/
+<dom-module id="get-notice">
+    
+  <style>
+
+   
+  </style>
+
+  <template>
+      <firbase-element
+          id="ref" childEvents location=""             
+           data="notices">
+      </firbase-element>
+     <templet is="dom-repeat" items="{{notices}}">
+        <div vertical layout flex>
+            <h4 flex>{{notices.date}}</h4>
+            <h4 flex>{{notices.title}}</h4>
+            <h4 flex>{{notices.detail}}</h4>
+         </div>
+      </templet>
+  </template>
+</dom-module>
+<script>
+
+  Polymer({
+
+    is: 'get-notice',
+ /*   sendNotice: function(e){
+        e.preventDefault();
+        this.$.ref.push({date: this.date, title: this.title, detail: this.detail});
+        this.detail="";
+        this.title="";
+    }*/
+
+  });
+</script>
+
+         
