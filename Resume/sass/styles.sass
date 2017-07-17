@@ -2,266 +2,104 @@
 @import './var.sass'
 
 *
-    box-sizing: border-box
+    margin: 0px
+    box-sizing:border-box
+    font-family: 'segoe-ui', arial
+    transition: all 350ms ease-in-out
+
+main
+    @include flex(row)
+
+aside
+    @include flex(column)
+    width: 300px
+    height: 100%
+    background: $theam-color
+    display: flex    
+    position: fixed
+    box-shadow: 2px 0px 4px rgba(0,0,0,0.3)
+
+.img-box
+    width: auto
+    height: 200px
+    background-image: linear-gradient(transparent  , black 200%), url('../images/sonali.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    align-items: flex-end
+    justify-content: flex-start
+    padding: 10px
+    
+h1.name 
+    color: white
     margin: 0
-    font-family: 'roboto', 'roboto mono', arial, sans-serif
-
-
-body    
-    width: 800px
-    border: 1px solid #ababab
-    margin: 50px auto
-    box-shadow: 0px 19px 13px -15px rgba(0, 0, 0, 0.25)
+    margin-bottom: 8px
+    
+.aside-box
+    height: 180px
+    //border: 1px solid white
+    margin: 5px
+    padding: 10px
+    color: white
+    display: flex
+    align-items: center
+    
+.aside-box>h4
+    font-weight: 300
     line-height: 1.5
-    @include display(row) 
-        
-    h1,
-    h2,
-    h3,
-    h4 
-        font-weight: 400
+    text-indent: 20px
     
-    p
-        font-size: 14px
-        letter-spacing: 1px
-        color: $faint-text
-    
-    a
-                        text-decoration: none
-                        color: #333    
-    
-    aside
-        width: 250px
-        background-color: #efefef
-        
-        .profile
-            height: 250px
-            width: 100%       
-            @include display(row)
-            align-items: center
-                
-            .bold
-                width: 40px
-                height: 170px
-                margin-left: 35px
-                background-color: transparent
-                opacity: 0
-            .pic
-                height: 170px
-                width: 170px
-                transform: translateX(45px)
-                background-repeat: no-repeat
-                background-size: 100%
-                background-image: url(../images/square.jpg)
-                
-                .sc-show
-                    display: none
-                
-        .monolog
-            padding: 0px 16px
-            display: flex
-            flex-direction: column
-            p
-                margin: 20px auto
-                text-indent: 30px
-                
-        .contact-container,
-        .social-container,
-        .skills-container    
-            margin: 40px 14px
-            
-            div
-                margin: 14px 0px
-                display: flex
-                flex-direction: row
-                padding: 7px 0
-            
-                
-                .icon-mob,
-                .icon-email,
-                .icon-add,
-                .icon-fb,
-                .icon-pin,
-                .icon-flip
-                    width: 24px
-                    height: 24px
-                    flex: 0 0 24px
-                    margin: 0 10px
-                    background-repeat: no-repeat
-                    background-size: contain
-                    
-                    
-            span.icon-mob
-                background-image: url('../images/whatsapp.svg')
-            span.icon-email
-                background-image: url('../images/ic_email_black_24px.svg')
-            span.icon-add
-                background-image: url('../images/ic_home_black_24px.svg')
-            span.icon-fb
-                background-image: url('../images/fb.svg')
-            span.icon-pin
-                background-image: url('../images/pin.svg')
-            span.icon-flip
-                background-image: url('../images/flipboard.svg')
-                
+.aside-log
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    margin: 5px
+    background-color: white
 
-        
-                    
-            .chip
-                @include chip
-                
-                    
-            
+.aside-log
+    font-weight: 300
+    word-spacing: 5px
+    letter-spacing: 1px
+    line-height: 1.5
+    
+.addr
+    flex: 1
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.5
+    margin: 5px 
+    
+section
+    flex: auto
+    background: #FAFAFA
+    padding: 30px
+    display: flex
+    flex-direction: column
+    margin-left: 300px
+
+.card
+    height: 200px
+    width: 100%
+    margin: 20px
+    @include material-shadow
+/* @media query*/
+
+@media screen and(max-width:'800px')
+    main
+        @include flex(column)
     
     section
-        height: 100%
-        flex: 1
-        padding: 0px 10px 
-        
-        header
-            width: 100%
-            height: 250px           
-            @include align-center
-            
-            
-            .name-box
-                height: 168px
-                width: 100%
-                border-top: 2px solid #d5d5d5
-                border-bottom: 2px solid #d5d5d5
-                margin-left: 40px
-                margin-right: 40px
-                @include align-center
-                
-                h1
-                    font-size: 40px
-                    font-family: 'roboto thin'
-                    color: #4f4f4f
-                    line-height: 1.2             
-            
-             
-        
-            
-        .head
-            display: -webkit-flex
-            display: -moz-flex
-            display: -ms-flex
-            display: -o-flex
-            display: flex
-                
-        .icon-project,
-        .icon-edu,
-        .icon-talks,
-        .icon-pub,
-        .icon-pi    
-            height: 30px
-            width: 30px
-            margin-right: 10px
-            background-size: 100%
-            
-        .icon-project
-            background-image: url('../images/project.svg')
-        .icon-edu
-            background-image: url('../images/school.svg')
-        .icon-talks
-            background-image: url('../images/talk.svg')
-        .icon-pub
-            background-image: url('../images/pub.svg')
-        .icon-pi
-            background-image: url('../images/ic_color_lens_black_24px.svg')
-         
-        .edu-container,
-        .talks-container,
-        .pub-container,
-        .pi-container
-            padding: 20px 0
-            
-        .project-box,
-        .edu-container .higher,
-        .edu-container .secondary,
-        .talks-box,
-        .pub-box ,
-        .pi-box
-            margin: 20px 40px
-
-        h4
-            margin-bottom: 10px
-            padding: 10px 0px
-            border-bottom: 2px solid #f2f2f2
-                
-        .edu-container            
-            .higher,
-            .secondary    
-                display: flex
-                
-            .edu-box
-                width: 50%
-                margin-right: 20px
-                
-        
-        .pub-container
-            .pub-box
-                h4
-                    margin: 10px 0
-                    padding: none
-                    border-bottom: none              
-
-                    
-@media screen and(max-width: 800px)
-    body
-        margin: 0
+        margin-left:0
+        @include flex(column)
+        @include exact-center
+    
+    aside
+        position: relative
         width: 100%
-        @include display(column)
-        
-        aside
-            width: 100vw
-            
-            .profile
-                min-height: 350px
-                min-width: 300px
-                
-                .bold
-                    width: 0
-                    height: 0
-                    margin: 0
-                    
-                .pic 
-                    width: 100%
-                    height: 100%
-                    background-position: center center
-                    background-size: cover
-                    transform: translateX(0)
-                    @include display(column)
-                    justify-content: flex-end
-                    background-image: linear-gradient(transparent 70%, black ),url(../images/square.jpg)
-                    
-                    .sc-show
-                        display: inline-block
-                        margin: 10px 20px
-                        color: white
-            .monolog
-                padding: 0px 14px
-                    
-        
-        section
-            
-            header
-                display: none
-                
-            .project-container
-                margin-top: 40px
-            
-            .edu-container            
-                .higher,
-                .secondary    
-                    @include display(column)
-                        
-                .edu-box
-                    width: 100%
-                    
-                    .title
-                        margin: 15px 0
-            
-            .chip-container
-                margin: 7px 0 0 0
-                    
+    
+        .img-box
+            height: 50vh
+    .card
+       
+        width: 100%
+        height: 50vh

@@ -1,24 +1,11 @@
-@mixin display($dir)
-    display: -webkit-flex
-    display: -moz-flex
-    display: -ms-flex
-    display: -o-flex
-    display: flex
-    flex-direction: ($dir)
-    
-@mixin exact-center   
+@mixin flex($dir)
+    display:flex
+    flex-direction:($dir)
+
+@mixin material-shadow
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.3)
+
+@mixin exact-center
     align-items: center
     justify-content: center
     
-@mixin align-center
-    @include display(row)
-    align-items: center
-    
-@mixin chip
-    color: #000000
-    display: inline-block
-    padding: 2px 14px
-    border-radius: 3px
-    margin: 4px
-    justify-content: center
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3)
