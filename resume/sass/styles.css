@@ -1,3 +1,5 @@
+
+
 /* line 4, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
 * {
   box-sizing: border-box;
@@ -201,7 +203,8 @@ body {
     body section .icon-edu,
     body section .icon-talks,
     body section .icon-pub,
-    body section .icon-pi {
+    body section .icon-pi,
+    body section .icon-history{
       height: 30px;
       width: 30px;
       margin-right: 10px;
@@ -221,6 +224,18 @@ body {
     /* line 170, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
     body section .icon-pi {
       background-image: url("../images/ic_color_lens_black_24px.svg"); }
+    body section .icon-history {
+      text-align: center;
+        font-size: 24px;
+        display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    }
+.icon-history > .fa-history{
+    margin-top: 2px;
+    font-size: 22px
+}
+
     /* line 173, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
     body section .edu-container,
     body section .talks-container,
@@ -301,11 +316,11 @@ body {
           /* line 238, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
           body aside .profile .pic .sc-show {
             display: inline-block;
-            margin: 10px 20px;
+            margin: 10px 14px;
             color: white; }
       /* line 242, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
       body aside .monolog {
-        padding: 0px 14px; }
+        padding: 15px 14px; }
     /* line 248, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
     body section header {
       display: none; }
@@ -329,6 +344,20 @@ body {
         margin: 15px 0; }
     /* line 265, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
     body section .chip-container {
-      margin: 7px 0 0 0; } }
+      margin: 7px 0 0 0; }
+    .chip-container{
+        margin-left: 10px !important;
+    }
+.Org-exp{
+    margin-top: 20px;
+}
+    .contact-container{
+        margin: 15px 14px !important;
+    }
+    .pi-chip{
+        padding-left: 10px;
+    }
+}
 
 /*# sourceMappingURL=styles.css.map */
+
