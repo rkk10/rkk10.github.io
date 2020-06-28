@@ -312,6 +312,318 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
+/* line 4, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'roboto', 'roboto mono', arial, sans-serif; }
+
+/* line 10, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+body {
+  width: 800px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.25); 
+  line-height: 1.5;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex; 
+  display: flex; 
+  flex-direction: row; }
+  /* line 18, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+  body h1,
+  body h2,
+  body h3, 
+  body h4 { 
+    font-weight: 400; }
+  /* line 24, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+  body p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #333; }
+  /* line 29, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+  body a {
+    text-decoration: none;
+    color: #333; }
+  /* line 33, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+  body aside {
+    width: 250px;
+    background-color: #efefef; }
+    /* line 37, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body aside .profile {
+      height: 250px;
+      width: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      /* line 43, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .profile .bold {
+        width: 40px;
+        height: 170px;
+        margin-left: 35px;
+        background-color: transparent;
+        opacity: 0; }
+      /* line 49, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .profile .pic {
+        height: 170px;
+        width: 170px;
+        transform: translateX(45px);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(../images/square.JPG); }
+        /* line 57, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+        body aside .profile .pic .sc-show {
+          display: none; }
+    /* line 60, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body aside .monolog {
+      padding: 0px 16px;
+      display: flex;
+      flex-direction: column; }
+      /* line 64, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .monolog p {
+        margin: 20px auto;
+        text-indent: 30px; }
+    /* line 68, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body aside .contact-container,
+    body aside .social-container,
+    body aside .skills-container {
+      margin: 40px 14px; }
+      /* line 73, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .contact-container div,
+      body aside .social-container div,
+      body aside .skills-container div {
+        margin: 14px 0px;
+        display: flex;
+        flex-direction: row;
+        padding: 7px 0; }
+        /* line 80, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+        body aside .contact-container div .icon-mob,
+        body aside .contact-container div .icon-email,
+        body aside .contact-container div .icon-add,
+        body aside .contact-container div .icon-fb,
+        body aside .contact-container div .icon-pin,
+        body aside .contact-container div .icon-flip,
+        body aside .social-container div .icon-mob,
+        body aside .social-container div .icon-email,
+        body aside .social-container div .icon-add,
+        body aside .social-container div .icon-fb,
+        body aside .social-container div .icon-pin,
+        body aside .social-container div .icon-flip,
+        body aside .skills-container div .icon-mob,
+        body aside .skills-container div .icon-email,
+        body aside .skills-container div .icon-add,
+        body aside .skills-container div .icon-fb,
+        body aside .skills-container div .icon-pin,
+        body aside .skills-container div .icon-flip {
+          width: 24px;
+          height: 24px;
+          flex: 0 0 24px;
+          margin: 0 10px;
+          background-repeat: no-repeat;
+          background-size: contain; }
+      /* line 94, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .contact-container span.icon-mob,
+      body aside .social-container span.icon-mob,
+      body aside .skills-container span.icon-mob {
+        background-image: url("../images/whatsapp.svg"); }
+      /* line 96, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .contact-container span.icon-email,
+      body aside .social-container span.icon-email,
+      body aside .skills-container span.icon-email {
+        background-image: url("../images/ic_email_black_24px.svg"); }
+      /* line 98, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .contact-container span.icon-add,
+      body aside .social-container span.icon-add,
+      body aside .skills-container span.icon-add {
+        background-image: url("../images/ic_home_black_24px.svg"); }
+      /* line 100, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .contact-container span.icon-fb,
+      body aside .social-container span.icon-fb, 
+      body aside .skills-container span.icon-fb {
+        background-image: url("../images/fb.svg"); }
+      /* line 102, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .contact-container span.icon-pin,
+      body aside .social-container span.icon-pin,
+      body aside .skills-container span.icon-pin {
+        background-image: url("../images/pin.svg"); }
+      /* line 104, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .contact-container span.icon-flip,
+      body aside .social-container span.icon-flip, 
+      body aside .skills-container span.icon-flip {
+        background-image: url("../images/flipboard.svg"); }
+      /* line 110, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .contact-container .chip,
+      body aside .social-container .chip,
+      body aside .skills-container .chip {
+        color: #000000;
+        display: inline-block;
+        padding: 2px 14px;
+        border-radius: 3px;
+        margin: 4px;
+        justify-content: center;
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3); }
+  /* line 116, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+  body section {
+    height: 100%;
+    flex: 1;
+    padding: 0px 10px; }
+    /* line 121, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section header {
+      width: 100%;
+      height: 250px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      /* line 127, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body section header .name-box {
+        height: 168px;
+        width: 100%;
+        border-top: 2px solid #d5d5d5;
+        border-bottom: 2px solid #d5d5d5;
+        margin-left: 40px;
+        margin-right: 40px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        /* line 136, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+        body section header .name-box h1 {
+          font-size: 40px;
+          font-family: 'roboto thin';
+          color: #4f4f4f;
+          line-height: 1.2; }
+    /* line 145, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .head {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex; }
+    /* line 152, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .icon-project,
+    body section .icon-edu,
+    body section .icon-talks,
+    body section .icon-pub,
+    body section .icon-pi,
+    body section .icon-history{
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      background-size: 100%; }
+    /* line 162, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .icon-project {
+      background-image: url("../images/project.svg"); }
+    /* line 164, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .icon-edu {
+      background-image: url("../images/school.svg"); }
+    /* line 166, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .icon-talks {
+      background-image: url("../images/talk.svg"); }
+    /* line 168, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .icon-pub {
+      background-image: url("../images/pub.svg"); }
+    /* line 170, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .icon-pi {
+      background-image: url("../images/ic_color_lens_black_24px.svg"); }
+    body section .icon-history {
+      text-align: center;
+        font-size: 24px;
+        display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    }
+.icon-history > .fa-history{
+    margin-top: 2px;
+    font-size: 22px
+}
+
+    /* line 173, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .edu-container,
+    body section .talks-container,
+    body section .pub-container,
+    body section .pi-container {
+      padding: 20px 0; }
+    /* line 179, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .project-box,
+    body section .edu-container .higher,
+    body section .edu-container .secondary,
+    body section .talks-box,
+    body section .pub-box,
+    body section .pi-box {
+      margin: 20px 40px; }
+    /* line 187, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section h4 {
+      margin-bottom: 10px;
+      padding: 10px 0px;
+      border-bottom: 2px solid #f2f2f2; }
+    /* line 193, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .edu-container .higher,
+    body section .edu-container .secondary {
+      display: flex; }
+    /* line 197, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .edu-container .edu-box {
+      width: 50%;
+      margin-right: 20px; }
+    /* line 204, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body section .pub-container .pub-box h4 {
+      margin: 10px 0;
+      padding: none;
+      border-bottom: none; }
+	nav.pi-container {
+
+			padding: 0px 14px;
+	}
+	.pi-chip {
+    padding: 10px 0;
+}
+@media screen and (max-width: 800px) {
+  /* line 211, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+  body {
+    margin: 0;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column; }
+    /* line 216, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+    body aside {
+      width: 100vw; }
+      /* line 219, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+      body aside .profile {
+        min-height: 350px;
+        min-width: 300px; }
+        /* line 223, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+        body aside .profile .bold {
+          width: 0;
+          height: 0;
+          margin: 0; }
+        /* line 228, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
+        body aside .profile .pic {
+          width: 100%;
+          height: 100%;
+          background-position: center center;
+          background-size: cover;
+          transform: translateX(0);
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
           background-image: linear-gradient(transparent 70%, black), url(../images/square.JPG); }
           /* line 238, C:/Users/Ravindra/Documents/GitHub/rkk10.github.io/resume/sass/styles.sass */
           body aside .profile .pic .sc-show {
@@ -360,4 +672,3 @@ body {
 }
 
 /*# sourceMappingURL=styles.css.map */
-
